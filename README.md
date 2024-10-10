@@ -22,3 +22,18 @@ MassTransit là một service bus nhẹ để xây dựng các ứng dụng phâ
 ## Ví dụ Thực Tế
 Tình huống ví dụ: Người dùng muốn nhận thông báo thông qua việc gọi một API. Chúng ta sẽ phát triển dự án notifier gồm hai ứng dụng: một producer API và một consumer console app. Cả hai ứng dụng sẽ được tạo bằng các template mặc định của Visual Studio 2022. Dự án sẽ sử dụng Docker Compose làm công cụ điều phối. Cả hai ứng dụng sẽ được docker hóa và RabbitMQ sẽ chạy trong Docker.
 
+# Cách chạy dự án.
+B1 : chạy docker để chạy rabbitMQ và các consumer (setting số lượng consumer trong docker-compose.yaml, với deploy:
+  replicas: 5 , mặc định tôi đang để 5 consumer)
+
+`docker-compose up --build`
+
+B2 : chạy http://localhost:15672/ để bật RabbitMQ management.
+
+B3 : Đăng nhập tài khoản và mật khẩu đều là `guest`.
+
+B4 : chạy dự án lên với `Set as startup Project` cho project `MasstransitRabbitMQ-Sample.Produces.API` để có thể tạo ra một produces có thể gửi `message` đến `RabbitMQ`
+
+
+
+
