@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{11F4CAE6-8888-4E4E-8E00-A0A61CEA9982}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E3282AA3-908D-4ED6-A8FC-30D4C5DF92B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasstransitRabbitMQ-Sample.Contract", "src\MasstransitRabbitMQ-Sample.Contract\MasstransitRabbitMQ-Sample.Contract.csproj", "{9905E114-4381-43B5-A809-960C771DD427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasstransitRabbitMQ-Sample.Producer.API", "src\MasstransitRabbitMQ-Sample.Producer.API\MasstransitRabbitMQ-Sample.Producer.API.csproj", "{F520CCFE-1C86-4161-8589-7BB160B65C6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasstransitRabbitMQ-Sample.Comsumer.API", "src\MasstransitRabbitMQ-Sample.Comsumer.API\MasstransitRabbitMQ-Sample.Comsumer.API.csproj", "{A1E78EE0-C99A-4987-9840-217EA6919B28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9905E114-4381-43B5-A809-960C771DD427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9905E114-4381-43B5-A809-960C771DD427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9905E114-4381-43B5-A809-960C771DD427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9905E114-4381-43B5-A809-960C771DD427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F520CCFE-1C86-4161-8589-7BB160B65C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F520CCFE-1C86-4161-8589-7BB160B65C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F520CCFE-1C86-4161-8589-7BB160B65C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F520CCFE-1C86-4161-8589-7BB160B65C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E78EE0-C99A-4987-9840-217EA6919B28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E78EE0-C99A-4987-9840-217EA6919B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E78EE0-C99A-4987-9840-217EA6919B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E78EE0-C99A-4987-9840-217EA6919B28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9905E114-4381-43B5-A809-960C771DD427} = {E3282AA3-908D-4ED6-A8FC-30D4C5DF92B8}
+		{F520CCFE-1C86-4161-8589-7BB160B65C6F} = {E3282AA3-908D-4ED6-A8FC-30D4C5DF92B8}
+		{A1E78EE0-C99A-4987-9840-217EA6919B28} = {E3282AA3-908D-4ED6-A8FC-30D4C5DF92B8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C34CB1F-EF45-4DF8-A8A0-C62D46E70825}
+	EndGlobalSection
+EndGlobal
