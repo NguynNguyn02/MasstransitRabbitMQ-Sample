@@ -1,0 +1,32 @@
+﻿version: '3.4'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: 'rabbitmqsample'
+    ports:
+      - "5672:5672"   
+      - "15672:15672" 
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_DEFAULT_VHOST: nguyen
+
+
+  masstransitrabbitmq-sample.comsumer.api:
+    image: ${DOCKER_REGISTRY-}masstransitrabbitmq-sample.consumer.api
+    build:
+      context: .
+      dockerfile: src/MasstransitRabbitMQ-Sample.Comsumer.API/Dockerfile
+    depends_on:
+      - rabbitmq
+    deploy:
+      replicas: 5
+    environment:
+      - MasstransitConfiguration__Host=rabbitmq
+      - MasstransitConfiguration__VHost=nguyen
+      - MasstransitConfiguration__UserName=guest
+      - MasstransitConfiguration__Password=guest
+      - MasstransitConfiguration__ExchangeName=send-notification-exchange
+      - MasstransitConfiguration__ExchangeType=topic
+      - MasstransitConfiguration__SmsQueueName=sms-queue
+      - MasstransitConfiguration__EmailQueueName=email-queue

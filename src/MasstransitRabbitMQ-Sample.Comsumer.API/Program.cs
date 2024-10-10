@@ -3,7 +3,7 @@ using Serilog;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Configuration.AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true);
+builder.Configuration.AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true).AddEnvironmentVariables();
 //add serilog configuration
 
 

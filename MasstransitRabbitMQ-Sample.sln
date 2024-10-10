@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasstransitRabbitMQ-Sample.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasstransitRabbitMQ-Sample.Comsumer.API", "src\MasstransitRabbitMQ-Sample.Comsumer.API\MasstransitRabbitMQ-Sample.Comsumer.API.csproj", "{A1E78EE0-C99A-4987-9840-217EA6919B28}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EF2BAC84-84E6-4DB7-804B-760613E217E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{A1E78EE0-C99A-4987-9840-217EA6919B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1E78EE0-C99A-4987-9840-217EA6919B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1E78EE0-C99A-4987-9840-217EA6919B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF2BAC84-84E6-4DB7-804B-760613E217E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF2BAC84-84E6-4DB7-804B-760613E217E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF2BAC84-84E6-4DB7-804B-760613E217E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF2BAC84-84E6-4DB7-804B-760613E217E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
